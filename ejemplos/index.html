@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Turnos</h1>
+        <div id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" placeholder="Ingrese su DNI">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
+        </div>
+        <button onclick="generarTurno()"> Generar Turno</button>
+        <div id="turnos"></div>
+        <textarea id="detalleTurno" rows="10" cols="50" readonly></textarea>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
